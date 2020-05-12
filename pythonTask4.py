@@ -1,6 +1,7 @@
 import re
 import os
 import random
+global a,b,c,d
 
 
 def createBankAcc(a,b,c,d):
@@ -15,11 +16,11 @@ def createBankAcc(a,b,c,d):
 
     customer.write(passw)
   print('The customer\'s password is: '+passw )
-  print('You have been logged in')
+  print()
   print('1. Create new bank account')
   print('2. Check account details')
   print('3. logout')
-  x = input('Enter an option')
+  x = input('Enter and option')
   if x=='1':
       print('Enter the following details please: ')
       a = input('Account Name: ')
@@ -44,9 +45,9 @@ def login(userName, pword):
     print('wrong password or username')
     start()
   else:
-    session= open('session.txt','w')
+    session= open('session.txt','a')
     session.write(userName)
-    print()
+    print('You have been logged in')
     print('1. Create new bank account')
     print('2. Check account details')
     print('3. logout')
