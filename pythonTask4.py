@@ -46,7 +46,7 @@ def login(userName, pword):
   else:
     session= open('session.txt','w')
     session.write(userName)
-    print('You have been logged in')
+    print()
     print('1. Create new bank account')
     print('2. Check account details')
     print('3. logout')
